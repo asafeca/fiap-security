@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: troque-por-um-segredo-bem-grande-e-aleatorio-de-pelo-menos-32-carachteres
+    expirationMs: 3600000
+
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: SpringSecurityJWT
+  datasource:
+    url: jwt:h2:mem:testdb
