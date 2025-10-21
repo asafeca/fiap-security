@@ -54,6 +54,16 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.6.4</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
