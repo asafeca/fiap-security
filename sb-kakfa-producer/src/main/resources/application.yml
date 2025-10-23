@@ -9,7 +9,13 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-
+paypal:
+  mode: sandbox
+    # mode: live      # para ambiente live
+  client-id: ASIGsTzrnG-hXm3iSaUr94BR9m2Nnwnv9s74A1YpZCCBudcIyOsByC5rg98aIor2gfBDDlf2Rf115Kz2
+  client-secret: EB3z20nfsNQwcwhQXsqtk-Yvgqf9UdKVUQww4cswOiIcJBW5sYX0lQca3tQc8S2pWr1sfU3MDsCZIobm
+  api-base-url: https://api-m.sandbox.paypal.com  # para sandbox (conta Personal)
+    # api-base-url: https://api-m.paypal.com         # para ambiente live (precisa de conta Business)
 topicos:
   pagamento:
     request:
